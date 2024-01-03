@@ -67,7 +67,7 @@ namespace Mantis_Gods
             
             // Set the fps values as indicated in the dictionary
             foreach ((string key, float value) in AnimationFps)
-                _anim.GetClipByName(key).fps = value;
+                _anim.GetClipByName(key).fps = value * MantisGods.Instance.Settings.speedMultiplier;
 
             if (gameObject.name.Contains("S"))
                 UpdatePhase2(gameObject, _control);

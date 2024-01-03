@@ -10,6 +10,7 @@ namespace Mantis_Gods
         
         public bool NormalArena;
         public bool KeepSpikes = true;
+        public int speedMultiplier = 1;
     }
 
     /*
